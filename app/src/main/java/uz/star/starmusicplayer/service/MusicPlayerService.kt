@@ -52,7 +52,7 @@ class MusicPlayerService : Service() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val name = "Audio Player"
             val descriptionText = "STAR MUSIC"
-            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val importance = NotificationManager.IMPORTANCE_LOW
             val channel = NotificationChannel(getString(R.string.default_notification_channel_id), name, importance).apply {
                 description = descriptionText
             }

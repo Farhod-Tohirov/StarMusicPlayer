@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         binding.musicPanel.visibility = View.VISIBLE
         binding.currentMusicName.text = music.title
         binding.currentMusicAuthor.text = music.artist
-        binding.currentMusicImage.loadImage(music.imageUri)
+        binding.currentMusicImage.loadImage(music.imageUri, R.drawable.ic_music_black)
         if (music.isPlaying) {
             binding.play.setImageResource(R.drawable.ic_baseline_pause_circle_filled_24)
         } else {
